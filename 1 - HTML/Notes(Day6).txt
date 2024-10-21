@@ -1,0 +1,37 @@
+Graphical User Interface (GUI)
+Command-line Interface (CLI)
+
+
+CLI Commands
+pwd - print working directory
+ls - list files inside the current working directory
+    ls -a - list all files including hidden files
+    ls -l - shows more details of files inside folder
+    ls -la - shows more details of all files inside folder including hidden files
+
+clear - clear 
+
+mkdir <foldername> - make directory(folder) | encapsulate name if it include spaces
+    mkdir .<foldername> - make a hidden dirrectory folder
+rmdir <foldername> - delete directory(folder) | encapsulate name if it include spaces
+    rmdir .<foldername> - delete a hidden dirrectory folder
+
+find . - show all files (both files and folders)
+    find . -type f - show only files w/o directory(folders)
+    find . -type d - show only directories(folders)
+cd - change directory
+    cd .. - go back 1 folder
+
+touch test.txt - create a file (test.txt as example)
+    touch .hidden_file.txt - create a file (.hidden_file.text as example)
+rm test.txt- remove/delete a file (test.txt as example)
+    rm .hidden_file.txt- remove/delete a hidden file (.hidden_file.text as example)
+
+mv test.txt rename_test.txt - rename a file (test.txt to rename_test.txt as example)
+mv rename_test.txt "1 - HTML" - move a file 
+
+cat <filename.extension> - show contents of file 
+head <filename.extension> - show a first portion content of a file (default is 10 lines)
+    head -n 3 <filename.extension> - show the first 3 lines of a file contents
+tail <filename.extension> - show a end portion of the contents of a file (defaul is 10 lines)
+    tail -n 3 <filename.extension> - show the last 3 lines of a file contents
