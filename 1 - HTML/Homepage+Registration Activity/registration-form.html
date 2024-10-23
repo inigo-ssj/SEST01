@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <style>
+      body {
+        color: white;
+        background-image: url(pexels-fotios-photos-1301856.jpg);
+        background-size: cover;
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <div style="width: auto; min-height: 900px; align-content: center">
+      <br />
+      <h1 style="color: white; font-size: 40px; text-align: center">
+        Registration
+      </h1>
+
+      <div style="text-align: center">
+        <form action="">
+          <table
+            align="center"
+            style="font-size: 20px; font-weight: bold; text-align-last: left"
+          >
+            <tr>
+              <td>
+                <label for="fullname-id" style="color: white">Name:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="user-fullname"
+                  id="fullname-id"
+                  placeholder="Name Surname"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="contact-id" style="color: white">Contact #:</label>
+              </td>
+              <td>
+                <input
+                  type="tel"
+                  name="user-contact-number"
+                  id="contact-number-id"
+                  placeholder="09XX-XXX-XXXX"
+                  pattern="09[\d]{2}-[\d]{3}-[\d]{4}"
+                  title="09xx-xxx-xxxx"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="email-id" style="color: white">Email:</label></td>
+              <td>
+                <input
+                  type="email"
+                  name="user-email"
+                  id="email-id"
+                  placeholder="youremail@email.com"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="birthdate-id" tyle="color: white">Birthdate:</label>
+              </td>
+              <td>
+                <input
+                  type="date"
+                  name="user-birthdate"
+                  id="birthdate-id"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="industry-id" tyle="color: white">Industry:</label>
+              </td>
+              <td>
+                <select name="user-industry" id="industry-id">
+                  <option value="none" disabled selected hidden>
+                    -- Select your Industry --
+                  </option>
+                  <option value="A">Agriculture</option>
+                  <option value="Mn">Mining</option>
+                  <option value="Mf">Manufacturing</option>
+                  <option value="C">Construction</option>
+                  <option value="E">Energy</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+
+          <label
+            for="reference-id"
+            tyle="color: white"
+            style="
+              color: white;
+              font-size: 20px;
+              text-align: center;
+              font-weight: bold;
+            "
+            >How did you know about this event?:</label
+          >
+          <br />
+          <p style="font-size: large">
+            <input
+              type="checkbox"
+              name="reference"
+              id="socmed-id"
+              value="Social Media"
+            />
+            <label for="comedy-id">Social Media</label>
+            <input
+              type="checkbox"
+              name="friend"
+              id="friend-id"
+              value="From a friend"
+            />
+            <label for="friend-id">From a friend</label>
+            <br />
+
+            <input
+              type="checkbox"
+              name="radio-tv"
+              id="radio-tv-id"
+              value="Radio/TV"
+            />
+            <label for="radio-tv-id">Radio/TV</label>
+
+            <input
+              type="checkbox"
+              name="ads"
+              id="ads-id"
+              value="Advertisements"
+            />
+            <label for="ads-id">Advertisements</label>
+          </p>
+
+          <button
+            type="register"
+            style="
+              width: 150px;
+              height: 40px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bolder;
+              font-size: 15px;
+              background-color: rgb(219, 252, 169);
+            "
+          >
+            Register
+          </button>
+        </form>
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>
