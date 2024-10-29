@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Activity</title>
+    <style>
+      img:hover {
+        opacity: 0.5;
+      }
+
+      div {
+        background-color: rgb(75, 131, 75);
+        padding: 10px;
+      }
+      div.first {
+        opacity: 0.1;
+      }
+      div.second {
+        opacity: 0.3;
+      }
+      div.third {
+        opacity: 0.6;
+      }
+
+      div.background {
+        background: url(https://img.freepik.com/free-vector/gradient-dynamic-blue-lines-background_23-2148995756.jpg);
+        border: 2px solid black;
+      }
+      div.transbox {
+        margin: 30px;
+        background-color: white;
+        order: 1px solid black;
+        opacity: 0.6;
+      }
+      div.transbox p {
+        margin: 5%;
+        font-weight: bold;
+        color: #000;
+      }
+
+      div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 180px;
+        
+      }
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Image Opacity</h2>
+    <img
+      src="https://mf.b37mrtl.ru/rbthmedia/images/2024.07/original/6694edd0f188cd1e8b328b2b.jpg"
+      alt="dog"
+      height="170"
+    />
+    <img
+      src="https://www.thesprucepets.com/thmb/jYl3lkRxv3fFgDkmlQYN9gohX3M=/3062x0/filters:no_upscale():strip_icc()/largest-domesticated-cats-4843236-hero-3296b6c62ba047029276d17a919ef18b.JPG"
+      alt=""
+      alt="dog"
+      height="170"
+    />
+    <img
+      src="https://cdn.britannica.com/79/191679-050-C7114D2B/Adult-capybara.jpg"
+      alt=""
+      alt="dog"
+      height="170"
+    />
+    <br />
+    <br />
+
+    <h2>Transparent Box</h2>
+    <div class="first"><p>Opacity 0.1</p></div>
+    <div class="second"><p>Opacity 0.3</p></div>
+    <div class="third"><p>Opacity 0.6</p></div>
+    <div><p>Opacity 1</p></div>
+
+    <br /><br />
+
+    <div class="background">
+      <div class="transbox">
+        <p>Text in a Transparent Box</p>
+      </div>
+    </div>
+
+    <br /><br />
+    <div class="gallery">
+      <a
+        target="_blank"
+        href="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2dldHR5aW1hZ2VzLTUyMzc3Njc5OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ=="
+      >
+        <img
+          src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2dldHR5aW1hZ2VzLTUyMzc3Njc5OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ=="
+          alt="cat"
+          width="600"
+          height="400"
+        />
+      </a>
+      <a
+        target="_blank"
+        href="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2dldHR5aW1hZ2VzLTUyMzc3Njc5OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ=="
+      >
+        <img
+          src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2dldHR5aW1hZ2VzLTUyMzc3Njc5OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ=="
+          alt="cat"
+          width="600"
+          height="400"
+        />
+      </a>
+      <a
+        target="_blank"
+        href="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2dldHR5aW1hZ2VzLTUyMzc3Njc5OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ=="
+      >
+        <img
+          src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL2dldHR5aW1hZ2VzLTUyMzc3Njc5OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjgyOH19fQ=="
+          alt="cat"
+          width="600"
+          height="400"
+        />
+      </a>
+      <div class="desc">This is a picture of a Cat</div>
+    </div>
+  </body>
+</html>
