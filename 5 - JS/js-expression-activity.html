@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expression Activity</title>
+  </head>
+  <body>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
+    <p id="result5"></p>
+    <p id="result6"></p>
+    <p id="result7"></p>
+    <p id="result8"></p>
+    <p id="result9"></p>
+    <p id="result10"></p>
+    <script>
+      let x = 10;
+
+      document.getElementById("result1").innerHTML = x == 10;
+      document.getElementById("result2").innerHTML = x === "10";
+      document.getElementById("result3").innerHTML = x === 10;
+      document.getElementById("result4").innerHTML = x != 10;
+      document.getElementById("result4").innerHTML = x < 10;
+      document.getElementById("result6").innerHTML = x > 10;
+      document.getElementById("result7").innerHTML = x <= 10;
+      document.getElementById("result8").innerHTML = x >= 10 && x != 10;
+      document.getElementById("result9").innerHTML = x != 5 || x < 5;
+      document.getElementById("result10").innerHTML = !(x > 5 + x);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Conditional Statement</title>
+  </head>
+  <body>
+    <p id="If"></p>
+    <p id="else"></p>
+    <p id="else-if"></p>
+    <p id="switch"></p>
+    <p id="demo"></p>
+    <p id="modulus"></p>
+    <p id="demo"></p>
+
+    <script>
+      /*
+        if - to specify a block of code if the specified condition is true
+        else - to specify a block of code if the specified condition is false
+        else if - to specify a new condition to test, if the first condition is false
+        switch - to specify different/many alternative block of codes that are executed
+        */
+
+      // --------------------if statement----------------
+
+      //   if (new Date().getHours() < 24) {
+      //     document.getElementById("If").innerHTML = "Good Day!";
+      //   }
+
+      // ----------------------else statement------------
+
+      //   const hour = new Date().getHours();
+      //   let greeting;
+
+      //   if (hour < 10) {
+      //     greeting = "good morning!";
+      //   } else if (hour < 20) {
+      //     greeting = "good day!";
+      //   } else {
+      //     greeting = "Good evening!";
+      //   }
+
+      //   document.getElementById("else").innerHTML = greeting;
+
+      //------------------else if statement--------------------
+      //   const hour = new Date().getHours();
+      //   let greeting;
+
+      //   if (hour < 20) {
+      //     greeting = "good morning!";
+      //   } else if (hour < 10) {
+      //     greeting = "good day!";
+      //   } else {
+      //     greeting = "Good evening!";
+      //   }
+
+      //   document.getElementById("else-if").innerHTML = greeting;
+
+      // -----------------switch statement---------------
+
+      //   let day;
+
+      //   switch (new Date().getDay()) {
+      //     case 0:
+      //       day = "Sunday";
+      //       break;
+
+      //     case 1:
+      //       day = "Monday";
+      //       break;
+
+      //     case 2:
+      //       day = "Tuesday";
+      //       break;
+
+      //     case 3:
+      //       day = "Wednesday";
+      //       break;
+
+      //     case 4:
+      //       day = "Thursday";
+      //       break;
+
+      //     case 5:
+      //       day = "Friday";
+      //       break;
+
+      //     case 6:
+      //       day = "Saturday";
+      //   }
+
+      //   document.getElementById("switch").innerHTML = "Today is " + day;
+
+      // -----------------------------------------------------------
+
+      /*
+        Assignment operator = assigns values
+        Addition operator + adds values
+        Multiplication operator * multiplies the values
+        Comparison Operator > compares values
+
+        Arithmetic operator - used to perform arithmetic on numbers
+        Modulus operator (remainder) - %
+        increment operator ++ it increments numbers
+        decrement operator -- it decrements numbers
+        exponentiation operator ** raise the first operand to the power of the second operand
+
+        addition assignment operator += it adds value to a variable
+        left shift assignment operator <<=
+        right shift assignment operator >>=
+        Logical OR assignment Operator ||=  used between 2 values, if 1st value is false, 2nd value is assigned
+        */
+
+      // ----------------------------Addition operator + adds values-------
+
+      // let x = 5;
+      // let y = 2;
+      // let z = x + y;
+
+      // document.getElementById("demo").innerHTML = z;
+
+      // ----------------------------aritmethic operator----------
+
+      // let a = 3;
+      // let x = (100 + 50) * a;
+
+      // document.getElementById("demo").innerHTML = x;
+
+      // ---------------------Modulus operator (remainder) - %------------
+
+      // let x = 10;
+      // let y = 3;
+      // let z = x % y;
+
+      // document.getElementById("modulus").innerHTML = z;
+
+      //   --------------------increment operator ++ it increments numbers--------------
+
+      // let x = 5;
+      // x++;
+
+      // let z = x;
+
+      // document.getElementById("modulus").innerHTML = z;
+
+      //   ---------------------decrement operator -- it decrements numbers-----------
+
+      // let x = 5;
+      // x--;
+
+      // let z = x;
+
+      // document.getElementById("modulus").innerHTML = z;
+
+      // ---------------------------exponentiation operator ** raise the first operand to the power of the second operand------------------------------------
+
+      // let x = 5;
+
+      // document.getElementById("modulus").innerHTML = x ** 2;
+
+      // ----------------assignment operator-------------------
+      /*
+        addition assignment operator += it adds value to a variable
+        left shift assignment operator <<=
+        right shift assignment operator >>=
+        Logical OR assignment Operator ||=  used between 2 values, if 1st value is false, 2nd value is assigned
+      */
+
+      // let x = 2;
+      // x <<= 2;
+
+      // document.getElementById("modulus").innerHTML = "the value of x is " + x;
+
+      // ----------------------- logical operator ----------------
+      /*
+      Comparing values and variables using logical operators
+      == equal to
+      === equal value and equal type
+      != not equal
+      !== not equal value or not equal type
+      > greater than
+      < less than
+      >= greater than or equal to
+      <= less than or equal to
+      && and (logocal AND)
+      || OR (logical OR)
+      */
+
+      // let x = 6;
+      // let y = 3;
+
+      // document.getElementById("modulus").innerHTML =
+      //   (x == 5 || y == 5) +
+      //   "<br>" +
+      //   (x == 6 || y == 0) +
+      //   "<br>" +
+      //   (x == 0 || y == 3) +
+      //   "<br>" +
+      //   (x == 3 &&y == 0);
+
+
+
+        function myFuction() {
+        let range;
+        let age = Number(document.getElementById("age").value);
+
+        if (isNaN(age)) {
+          range = "Input is not a number";
+        } else {
+          range = age < 18 ? "Too young" : "Old enough";
+        }
+
+        document.getElementById("demo").innerHTML = range + " to vote.";
+      }
+    </script>
+  </body>
+</html>

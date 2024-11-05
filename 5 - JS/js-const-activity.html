@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="1"></p>
+    <p id="2"></p>
+    <p id="3"></p>
+    <p id="4"></p>
+    <p id="5"></p>
+    <script>
+      a = 8;
+      b = 5;
+      c = 4;
+
+      d1 = a + b + c;
+      d2 = a - c + b;
+      d3 = a + b * c;
+      d4 = (a * b) / c;
+      d5 = b + a / c;
+
+      document.getElementById("1").innerHTML =
+        "1. d = a + b + c Result: d =" + d1;
+      document.getElementById("2").innerHTML =
+        "2. d = a - c + b   Result: d =" + d2;
+      document.getElementById("3").innerHTML =
+        "3. d = a + b * c   Result: d =" + d3;
+      document.getElementById("4").innerHTML =
+        "4. d = (a + b) / c Result: d =" + d4;
+      document.getElementById("5").innerHTML =
+        "5. d = b + a / c   Result: d =" + d5;
+    </script>
+  </body>
+</html>
