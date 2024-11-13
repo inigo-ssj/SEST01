@@ -1,0 +1,19 @@
+<!--
+    Javascripts Events
+    - These are the things that happens in the system you are programming when it is triggered
+    - They are sometimes called event listeners, they are interchangeable for a certain purpose but listeners listens out for the event that is happening.
+-->
+
+<button>Change color</button>
+ 
+<script>
+    const btn = document.querySelector("button");
+
+    function random(number) {
+        return Math.floor(Math.random()*(number +1));
+    }
+
+    btn.addEventListener("click", () => {
+        const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+        document.body.style.backgroundColor = rndCol;
+    });
